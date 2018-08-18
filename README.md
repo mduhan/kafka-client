@@ -8,19 +8,20 @@
 4. Distributed lock using zookeeper . Sample code in DistributedLockTest
 5. Store long value in zookeeper . Sample code in DistributedCountTest
 
-## Build 
+## Build
+   ```
    gradle clean build
    Install in local maven repo by executing below commands from lib directory of kafka client.
    mvn install:install-file -Dfile=kafka-client-1.0.jar -DgroupId=org.novus -DartifactId=kafka-client -Dversion=1.0 -Dpackaging=jar
-   
+   ```
    
 ## Requisite
 
    set zookeeperUrl on application start. Defaulted to localhost:2181
-   System.setProperty(NovusConstants.ZOOKEEPER_URL, "ZOOKEEPER_URL");
+####   System.setProperty(NovusConstants.ZOOKEEPER_URL, "ZOOKEEPER_URL");
 
    set schemaRegistryUrl  on application start.Defaulted to http://localhost:8081 
-   System.setProperty(NovusConstants.SCHEMA_REGISTRY_URL, "schemaRegistryUrl");   
+####   System.setProperty(NovusConstants.SCHEMA_REGISTRY_URL, "schemaRegistryUrl");   
 
 ## Dependencies
 repositories {
