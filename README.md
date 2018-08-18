@@ -31,6 +31,7 @@ repositories {
 }
  
 dependencies {
+
     compile group: 'org.springframework.kafka', name: 'spring-kafka', version:'1.2.2.RELEASE'
     compile group: 'org.apache.avro', name: 'avro', version:'1.8.2'
     compile group: 'io.confluent', name: 'kafka-avro-serializer', version:'3.2.0'
@@ -38,16 +39,6 @@ dependencies {
     compile group: 'org.apache.curator', name: 'curator-recipes', version:'2.12.0'
     compile group: 'io.reactivex', name: 'rxjava', version:'1.2.5'
     compile group: 'org.novus', name: 'kafka-client', version:'1.0'
+    
 }
-   
-Important links :-
-
-2. https://opcentral.operative.com/display/ENG/Novus+client+java+Kafka+api+example   java apis producer
-3. https://opcentral.operative.com/display/ENG/Novus+client+Java+Consumer+Api+examples  java apis consumer
-4. https://opcentral.operative.com/display/ENG/Maintain+distributed+atomic+long+in+zookeeper+with+curator+recipe  atomic long for across cluster
-6. Download above jar and install in local by executing below commands from jar location
-
-7. Check Test classes to see novus jar sample working examples
-8. Include below dependencies in POM or build.gradle.
-   https://opcentral.operative.com/display/ENG/Kafka+Novus+Client+Import+in+project
 
